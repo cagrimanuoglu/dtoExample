@@ -1,10 +1,6 @@
 package com.example.DtoExample.dto;
 
 
-import com.example.DtoExample.entity.Adres;
-
-import java.util.List;
-
 public class KisiDto {
 
     //private Long id;
