@@ -1,12 +1,15 @@
 package com.example.DtoExample.dto;
 
 
+import com.example.DtoExample.entity.Araba;
+
+import java.util.List;
+
 public class KisiDto {
 
     //private Long id;
     private String adi;
     private String soyadi;
-
 
     public KisiDto() {
     }
@@ -16,9 +19,8 @@ public class KisiDto {
         this.adi = adi;
         this.soyadi = soyadi;
 
+
     }
-
-
 
     public String getAdi() {
         return adi;

@@ -14,16 +14,30 @@ public class Kisi {
     @Column(length = 100)
     private String soyadi;
 
+    @OneToMany(
+            mappedBy = "kisi",
+            cascade = CascadeType.ALL
+    )
+    private List<Araba> araba;
 
 
     public Kisi() {
     }
 
-    public Kisi(Long id, String adi, String soyadi) {
+    public Kisi(Long id, String adi, String soyadi,List<Araba> araba) {
         this.id = id;
         this.adi = adi;
         this.soyadi = soyadi;
+        this.araba = araba;
 
+    }
+
+    public List<Araba> getAraba() {
+        return araba;
+    }
+
+    public void setAraba(List<Araba> araba) {
+        this.araba = araba;
     }
 
     public Long getId() {
